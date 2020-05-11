@@ -13,17 +13,71 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
-  font-family: 'Open Sans', sans-serif; 
-}
-
-.container {
-  margin: 0 auto;
-  width: 110rem;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.button {
+  padding: 1.3rem 2.5rem;
+  background-color: $button_color;
+  color: $white_color;
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($button_color, 10);
+  }
+}
+
+.button_secondary {
+  background-color: transparent;
+  color: $gray_color;
+}
+
+// HEADER 
+.header {
+  display: flex;
+  align-items: center;
+  padding: 5rem 16rem;
+
+  .logo-link {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .list {
+      display: flex;
+  
+      .list_item {
+        padding: 0 1rem;
+  
+        .list_item_link {
+          display: inline-block;
+          padding: 0 0.5rem;
+          color: $gray_color;
+          text-decoration: none;
+          
+          &:hover {
+            color: $black_color;
+          }
+        }
+      }
+    }
+  }
 }
