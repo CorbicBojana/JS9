@@ -1,0 +1,31 @@
+{
+  "name": "js2",
+  "version": "1.0.0",
+  "description": "Four card feature section",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorbicBojana/JS2.git"
+  },
+  "author": "CorbicBojana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorbicBojana/JS2/issues"
+  },
+  "homepage": "https://github.com/CorbicBojana/JS2#readme",
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-uglify": "^4.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.12.0"
+  }
+}
