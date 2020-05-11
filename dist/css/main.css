@@ -72,7 +72,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 5rem 16rem; }
+  margin: 5rem 16rem; }
   .header .logo-link {
     display: inline-block;
     margin-right: 3rem; }
@@ -92,3 +92,45 @@ body {
           text-decoration: none; }
           .header .nav .list .list_item .list_item_link:hover {
             color: black; }
+
+.intro {
+  display: flex;
+  margin: 11rem 0 11rem 16rem; }
+  .intro .container_intro h1 {
+    color: black;
+    font-size: 7.2rem;
+    font-weight: 700;
+    line-height: 1.2; }
+  .intro .container_intro p {
+    margin-bottom: 3.5rem;
+    color: #bfbfbf;
+    font-size: 2rem;
+    line-height: 1.6; }
+  .intro .container_intro .button {
+    padding: 1.3rem 4rem;
+    font-size: 2.2rem; }
+
+.statistics {
+  padding: 0 16rem;
+  background-color: #e8e8e8;
+  position: relative; }
+  .statistics .container_form {
+    margin: 0 16rem;
+    padding: 5rem 6rem;
+    position: absolute;
+    top: -50%;
+    left: 16rem;
+    right: 16rem;
+    background: url("../../dist/images/bg-shorten-desktop.svg") #3b3054;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem; }
+    .statistics .container_form .form .input_form {
+      width: calc(100% - 16.5rem);
+      padding: 1.3rem;
+      font-size: 2.2rem;
+      border-radius: 1rem;
+      border: none;
+      outline: none; }
+    .statistics .container_form .form .button_form {
+      border-radius: 1rem; }
