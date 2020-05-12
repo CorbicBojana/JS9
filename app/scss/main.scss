@@ -168,12 +168,13 @@ p {
     }
 
     .row {
+      padding-bottom: 12rem;
       position: relative;
 
       &:after {
         content: "";
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 0;
         right: 0;
         width: 100%;
@@ -183,11 +184,12 @@ p {
 
       .col_3 {
         margin-right: 3rem;
-        padding: 8rem 3rem 4rem;
+        padding: 8rem 3rem 4rem 2.5rem;
         background-color: $white_color;
         border-radius: 1rem;
         position: relative;
         z-index: 2;
+        height: fit-content;
 
         &:nth-child(2) {
           margin-top: 4rem;
@@ -205,9 +207,9 @@ p {
   
         .col_img {
           position: absolute;
-          top: -3rem;
+          top: -4rem;
           display: inline-block;
-          padding: 2rem;
+          padding: 2.5rem;
           background-color: $dark_violet_color;
           border-radius: 50%;
         }
