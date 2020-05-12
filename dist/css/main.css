@@ -191,3 +191,31 @@ p {
   text-align: center; }
   .container_boost h2 {
     color: white; }
+
+.footer {
+  padding: 7rem 16rem 6rem;
+  background-color: #232127; }
+  .footer .col {
+    width: 40%; }
+  .footer .col_2 {
+    width: 60%;
+    display: flex; }
+    .footer .col_2 .list {
+      margin-right: 7rem; }
+      .footer .col_2 .list .list_item .list_item_link {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: #bfbfbf;
+        text-decoration: none; }
+        .footer .col_2 .list .list_item .list_item_link:hover {
+          color: #2acfcf; }
+      .footer .col_2 .list .list_item .link {
+        margin-bottom: 3rem;
+        color: white; }
+        .footer .col_2 .list .list_item .link:hover {
+          color: white; }
+    .footer .col_2 .list_icon {
+      display: flex; }
+      .footer .col_2 .list_icon .list_icon_item_link {
+        display: inline-block;
+        margin-left: 2rem; }

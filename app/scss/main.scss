@@ -229,3 +229,54 @@ p {
     color: $white_color;
   }
 }
+
+// FOOTER 
+.footer {
+  padding: 7rem 16rem 6rem;
+  background-color: $very_dark_violet_color;
+
+  .col {
+    width: 40%;
+  }
+
+  .col_2 {
+    width: 60%;
+    display: flex;
+
+    .list {
+      margin-right: 7rem;
+
+      .list_item {
+
+        .list_item_link {
+          display: inline-block;
+          margin-bottom: 2rem;
+          color: $gray_color;
+          text-decoration: none;
+
+          &:hover {
+            color: $button_color;
+          }
+        }
+
+        .link {
+          margin-bottom: 3rem;
+          color: $white_color;
+
+          &:hover {
+            color: $white_color
+          }
+        }
+      }
+    }
+
+    .list_icon {
+      display: flex;
+
+      .list_icon_item_link {
+        display: inline-block;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
