@@ -76,6 +76,10 @@ h1, h2, h3 {
   font-weight: 700;
   line-height: 1.2; }
 
+h2 {
+  margin-bottom: 2rem;
+  font-size: 3.4rem; }
+
 p {
   color: #bfbfbf;
   font-size: 2rem;
@@ -144,9 +148,6 @@ p {
     margin: 0 auto;
     padding: 21rem 0 10rem;
     text-align: center; }
-    .statistics .container_statistics .container_statistics_intro h2 {
-      margin-bottom: 2rem;
-      font-size: 3.4rem; }
   .statistics .container_statistics .row {
     padding-bottom: 12rem;
     position: relative; }
@@ -182,3 +183,11 @@ p {
         padding: 2.5rem;
         background-color: #3b3054;
         border-radius: 50%; }
+
+.container_boost {
+  padding: 7rem 0 6rem;
+  background: url("../../dist/images/bg-boost-desktop.svg") #3b3054;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .container_boost h2 {
+    color: white; }

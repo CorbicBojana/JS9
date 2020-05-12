@@ -53,6 +53,11 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+h2 {
+  margin-bottom: 2rem;
+  font-size: 3.4rem;
+}
+
 p {
   color: $gray_color;
   font-size: 2rem;
@@ -160,11 +165,6 @@ p {
       margin: 0 auto;
       padding: 21rem 0 10rem;
       text-align: center;
-
-      h2 {
-        margin-bottom: 2rem;
-        font-size: 3.4rem;
-      }
     }
 
     .row {
@@ -215,5 +215,17 @@ p {
         }
       }
     }
+  }
+}
+
+// BOOST 
+.container_boost {
+  padding: 7rem 0 6rem;
+  background: url("../../dist/images/bg-boost-desktop.svg") $dark_violet_color;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h2 {
+    color: $white_color;
   }
 }
