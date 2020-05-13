@@ -28,23 +28,29 @@
         .container_img {
             order: -1;
             margin-left: 2.5rem;
+            overflow: hidden;
         }
     }
 
     .statistics {
+        padding: 0 2.5rem;
+        
         
         .container_form {
             top: -11rem;
             left: 2.5rem;
             right: 2.5rem;
 
-            .input_form {
-                width: 100%;
-                margin-bottom: 1.5rem;
-            }
+            .form {
 
-            .button_form {
-                width: 100%;
+                .input_form {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+    
+                .button_form {
+                    width: 100%;
+                }
             }
         }
 
@@ -53,8 +59,63 @@
             .container_statistics_intro {
                 width: 100%;
             }
+
+            .row {
+                flex-wrap: wrap;
+                padding-bottom: 7rem;
+                text-align: center;
+
+                &::after {
+                    top: 0;
+                    left: 50%;
+                    right: 0;
+                    bottom: 30%;
+                    width: 1rem;
+                    height: auto;
+                    transform: translateX(-50%);
+                }
+    
+                .col_3 {
+                    margin-right: 0;
+                    margin-bottom: 9rem;
+    
+                    &:nth-child(2) {
+                        margin-top: 0;
+                    }
+    
+                    &:last-child {
+                        margin-top: 0;
+                    }
+
+                    .col_img {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
         }
     }
 
+    .footer {
+        text-align: center;
+        padding: 5rem 2.5rem;
 
+        .col {
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+
+        .col_2 {
+            width: 100%;
+            flex-direction: column;
+
+            .list {
+                margin: 0 0 4rem;
+            }
+
+            .list_icon {
+                justify-content: center;
+            }
+        }
+    }
 }

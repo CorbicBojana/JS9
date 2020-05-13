@@ -50,10 +50,11 @@ body {
 
 .row {
   display: flex;
-  justify-content: center; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .col_3 {
-  width: 33%; }
+  width: 30%; }
 
 .button {
   padding: 1.3rem 2.5rem;
@@ -188,7 +189,7 @@ p {
         border-radius: 50%; }
 
 .container_boost {
-  padding: 7rem 0 6rem;
+  padding: 7rem 2.5rem 6rem;
   background: url("../../dist/images/bg-boost-desktop.svg") #3b3054;
   background-repeat: no-repeat;
   text-align: center; }
@@ -246,15 +247,53 @@ p {
         font-size: 6.2rem; }
     .intro .container_img {
       order: -1;
-      margin-left: 2.5rem; }
-  .statistics .container_form {
-    top: 11rem;
-    left: 2.5rem;
-    right: 2.5rem; }
-    .statistics .container_form .input_form {
-      width: 100%;
-      margin-bottom: 1.5rem; }
-    .statistics .container_form .button_form {
+      margin-left: 2.5rem;
+      overflow: hidden; }
+  .statistics {
+    padding: 0 2.5rem; }
+    .statistics .container_form {
+      top: -11rem;
+      left: 2.5rem;
+      right: 2.5rem; }
+      .statistics .container_form .form .input_form {
+        width: 100%;
+        margin-bottom: 1.5rem; }
+      .statistics .container_form .form .button_form {
+        width: 100%; }
+    .statistics .container_statistics .container_statistics_intro {
       width: 100%; }
-  .statistics .container_statistics .container_statistics_intro {
-    width: 100%; } }
+    .statistics .container_statistics .row {
+      flex-wrap: wrap;
+      padding-bottom: 7rem;
+      text-align: center; }
+      .statistics .container_statistics .row::after {
+        top: 0;
+        left: 50%;
+        right: 0;
+        bottom: 30%;
+        width: 1rem;
+        height: auto;
+        transform: translateX(-50%); }
+      .statistics .container_statistics .row .col_3 {
+        margin-right: 0;
+        margin-bottom: 9rem; }
+        .statistics .container_statistics .row .col_3:nth-child(2) {
+          margin-top: 0; }
+        .statistics .container_statistics .row .col_3:last-child {
+          margin-top: 0; }
+        .statistics .container_statistics .row .col_3 .col_img {
+          left: 50%;
+          transform: translateX(-50%); }
+  .footer {
+    text-align: center;
+    padding: 5rem 2.5rem; }
+    .footer .col {
+      width: 100%;
+      margin-bottom: 5rem; }
+    .footer .col_2 {
+      width: 100%;
+      flex-direction: column; }
+      .footer .col_2 .list {
+        margin: 0 0 4rem; }
+      .footer .col_2 .list_icon {
+        justify-content: center; } }

@@ -20,11 +20,12 @@ body {
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .col_3 {
-  width: 33%;
+  width: 30%;
 }
 
 .button {
@@ -225,7 +226,7 @@ p {
 
 // BOOST 
 .container_boost {
-  padding: 7rem 0 6rem;
+  padding: 7rem 2.5rem 6rem;
   background: url("../../dist/images/bg-boost-desktop.svg") $dark_violet_color;
   background-repeat: no-repeat;
   text-align: center;
