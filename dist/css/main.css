@@ -45,7 +45,8 @@ html {
 
 body {
   font-size: 1.8rem;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; }
 
 .row {
   display: flex;
@@ -119,6 +120,8 @@ p {
   .intro .container_intro .button {
     padding: 1.3rem 4rem;
     font-size: 2.2rem; }
+  .intro .container_img {
+    overflow: hidden; }
 
 .statistics {
   padding: 0 16rem;
@@ -197,6 +200,10 @@ p {
   background-color: #232127; }
   .footer .col {
     width: 40%; }
+    .footer .col .logo_link {
+      display: inline-block; }
+      .footer .col .logo_link svg path {
+        fill: white; }
   .footer .col_2 {
     width: 60%;
     display: flex; }
@@ -219,3 +226,35 @@ p {
       .footer .col_2 .list_icon .list_icon_item_link {
         display: inline-block;
         margin-left: 2rem; }
+        .footer .col_2 .list_icon .list_icon_item_link:hover svg path {
+          fill: #2acfcf; }
+
+@media only screen and (max-width: 780px) {
+  .col_3 {
+    width: 100%; }
+  .header {
+    margin: 3.5rem 2.5rem; }
+    .header .nav {
+      display: none; }
+  .intro {
+    flex-direction: column;
+    margin: 0 0 16rem 0;
+    text-align: center; }
+    .intro .container_intro {
+      margin: 3rem 2.5rem; }
+      .intro .container_intro h1 {
+        font-size: 6.2rem; }
+    .intro .container_img {
+      order: -1;
+      margin-left: 2.5rem; }
+  .statistics .container_form {
+    top: 11rem;
+    left: 2.5rem;
+    right: 2.5rem; }
+    .statistics .container_form .input_form {
+      width: 100%;
+      margin-bottom: 1.5rem; }
+    .statistics .container_form .button_form {
+      width: 100%; }
+  .statistics .container_statistics .container_statistics_intro {
+    width: 100%; } }

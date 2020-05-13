@@ -1,2 +1,60 @@
 @media only screen and (max-width: 780px) {
+
+    .col_3 {
+        width: 100%;
+    }
+
+    .header {
+        margin: 3.5rem 2.5rem;
+
+        .nav {
+            display: none;
+        }
+    } 
+
+    .intro {
+        flex-direction: column;
+        margin: 0 0 16rem 0;
+        text-align: center;
+
+        .container_intro {
+            margin: 3rem 2.5rem;
+
+            h1 {
+                font-size: 6.2rem;
+            }
+        }
+
+        .container_img {
+            order: -1;
+            margin-left: 2.5rem;
+        }
+    }
+
+    .statistics {
+        
+        .container_form {
+            top: -11rem;
+            left: 2.5rem;
+            right: 2.5rem;
+
+            .input_form {
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            .button_form {
+                width: 100%;
+            }
+        }
+
+        .container_statistics {
+
+            .container_statistics_intro {
+                width: 100%;
+            }
+        }
+    }
+
+
 }

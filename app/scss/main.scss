@@ -15,6 +15,7 @@ html {
 body {
   font-size: 1.8rem;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .row {
@@ -121,6 +122,10 @@ p {
       padding: 1.3rem 4rem;
       font-size: 2.2rem;
     }
+  }
+
+  .container_img {
+    overflow: hidden;
   }
 }
 
@@ -237,6 +242,17 @@ p {
 
   .col {
     width: 40%;
+
+    .logo_link {
+      display: inline-block;
+
+      svg {
+
+        path {
+          fill: $white_color;
+        }
+      }
+    }
   }
 
   .col_2 {
@@ -276,7 +292,19 @@ p {
       .list_icon_item_link {
         display: inline-block;
         margin-left: 2rem;
+
+        &:hover {
+
+          svg {
+
+            path {
+              fill: $button_color
+            }
+          }
+        }
       }
     }
   }
 }
+
+@import "media";
