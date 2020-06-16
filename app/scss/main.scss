@@ -49,6 +49,10 @@ body {
   color: $gray_color;
 }
 
+.button_form {
+  border-radius: 1rem;
+}
+
 h1, h2, h3 {
   color: $black_color;
   font-weight: 700;
@@ -159,12 +163,45 @@ p {
         padding: 1.3rem;
         font-size: 2.2rem;
         border-radius: 1rem;
-        border: none;
+        border: 0.4rem solid transparent;
         outline: none;
       }
 
-      .button_form {
-        border-radius: 1rem;
+      .error_msg {
+        margin-top: 1.5rem;
+        color: $red_color;
+        font-style: italic;
+      }
+    }
+  }
+
+  .short_links {
+    padding-top: 13rem;
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 2.5rem 3rem;
+      background-color: $white_color;
+      border-radius: 1rem;
+
+      .item_link, .item_shortlink {
+        text-decoration: none;
+      }
+
+      .item_link {
+        color: $black_color;
+      }
+
+      .item_shortlink {
+        margin-right: 2rem;
+        color: $button_color;
+      }
+
+      .button_copied {
+        background-color: $dark_violet_color;
       }
     }
   }

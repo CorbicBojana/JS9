@@ -73,6 +73,9 @@ body {
   background-color: transparent;
   color: #bfbfbf; }
 
+.button_form {
+  border-radius: 1rem; }
+
 h1, h2, h3 {
   color: black;
   font-weight: 700;
@@ -146,10 +149,31 @@ p {
       padding: 1.3rem;
       font-size: 2.2rem;
       border-radius: 1rem;
-      border: none;
+      border: 0.4rem solid transparent;
       outline: none; }
-    .statistics .container_form .form .button_form {
+    .statistics .container_form .form .error_msg {
+      margin-top: 1.5rem;
+      color: #f46262;
+      font-style: italic; }
+  .statistics .short_links {
+    padding-top: 13rem; }
+    .statistics .short_links .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 2.5rem 3rem;
+      background-color: white;
       border-radius: 1rem; }
+      .statistics .short_links .item .item_link, .statistics .short_links .item .item_shortlink {
+        text-decoration: none; }
+      .statistics .short_links .item .item_link {
+        color: black; }
+      .statistics .short_links .item .item_shortlink {
+        margin-right: 2rem;
+        color: #2acfcf; }
+      .statistics .short_links .item .button_copied {
+        background-color: #3b3054; }
   .statistics .container_statistics .container_statistics_intro {
     width: 50%;
     margin: 0 auto;
@@ -238,7 +262,8 @@ p {
     width: 100%; }
   .header {
     margin: 3.5rem 2.5rem;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative; }
     .header .container_header {
       width: 100%;
       display: flex;
@@ -286,8 +311,7 @@ p {
       border-radius: 1rem;
       position: absolute;
       top: 8.1rem;
-      left: 2.5rem;
-      right: 2.5rem; }
+      left: 0; }
       .header .nav .list {
         flex-direction: column;
         width: 100%;

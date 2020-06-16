@@ -83,15 +83,19 @@
 
     <div class="container_form">
 
-      <form class="form">
+      <form id="form" class="form">
         
-        <input type="text" placeholder="Shorten a link here..." class="input_form" />
-
+        <input type="text" placeholder="Shorten a link here..." id="input_form" class="input_form" />
+        
         <button class="button button_form">Shorten It!</button>
+
+        <div id="error_msg" class="error_msg"></div>
 
       </form>
 
     </div>
+
+    <div class="short_links"></div>
 
     <div class="container_statistics">
 
@@ -263,7 +267,7 @@
     Coded by <a href="#">CBojana</a>.
   </div>
 
-  <script src="./js/main.min.js"></script>
+  <script src="../app/js/main.js"></script>
 
 </body>
 </html>
