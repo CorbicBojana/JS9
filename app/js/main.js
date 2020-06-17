@@ -117,7 +117,7 @@ function showShortLinks(link, shortLink) {
     container.insertAdjacentHTML("afterbegin", `
     <div class="item">
       <a href="${link}" class="item_link">${link}</a>
-      <div>
+      <div class="item_container">
         <a href="${shortLink}" id="shortLink" class="item_shortlink">${shortLink}</a>
         <button id="copy" class="button button_form">Copy</button>
       </div>

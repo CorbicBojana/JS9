@@ -341,6 +341,23 @@ p {
       overflow: hidden; }
   .statistics {
     padding: 0 2.5rem; }
+    .statistics .short_links {
+      padding-top: 17rem; }
+      .statistics .short_links .item {
+        flex-direction: column;
+        align-items: start; }
+        .statistics .short_links .item .item_link, .statistics .short_links .item .item_shortlink {
+          margin-bottom: 2rem;
+          display: inline-block; }
+        .statistics .short_links .item .item_link, .statistics .short_links .item .item_container {
+          width: 100%; }
+        .statistics .short_links .item .item_link {
+          border-bottom: 0.05rem solid #3b3054; }
+        .statistics .short_links .item .item_link {
+          padding-bottom: 2rem; }
+        .statistics .short_links .item .button {
+          display: block;
+          width: 100%; }
     .statistics .container_form {
       top: -11rem;
       left: 2.5rem;
