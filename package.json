@@ -1,28 +1,32 @@
 {
-  "name": "js2",
+  "name": "js9",
   "version": "1.0.0",
-  "description": "Four card feature section",
+  "description": "Shortly URL shortening API Challenge",
   "main": "gruntfile.js",
   "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 8080\" \"open-cli http://localhost:8080/dist\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CorbicBojana/JS2.git"
+    "url": "git+https://github.com/CorbicBojana/JS9.git"
   },
   "author": "CorbicBojana",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CorbicBojana/JS2/issues"
+    "url": "https://github.com/CorbicBojana/JS9/issues"
   },
-  "homepage": "https://github.com/CorbicBojana/JS2#readme",
+  "homepage": "https://github.com/CorbicBojana/JS9#readme",
   "dependencies": {
     "grunt": "^1.0.4",
-    "grunt-contrib-uglify": "^4.0.1"
+    "concurrently": "^5.2.0",
+    "http-server": "^0.12.3",
+    "open-cli": "^6.0.1"
   },
   "devDependencies": {
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
     "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-imagemin": "^3.1.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
