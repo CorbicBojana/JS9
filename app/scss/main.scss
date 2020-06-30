@@ -282,6 +282,7 @@ p {
 .footer {
   padding: 7rem 16rem 6rem;
   background-color: $very_dark_violet_color;
+  overflow: hidden;
 
   .col {
     width: 40%;

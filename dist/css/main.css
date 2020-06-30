@@ -225,7 +225,8 @@ p {
 
 .footer {
   padding: 7rem 16rem 6rem;
-  background-color: #232127; }
+  background-color: #232127;
+  overflow: hidden; }
   .footer .col {
     width: 40%; }
     .footer .col .logo_link {
@@ -257,7 +258,7 @@ p {
         .footer .col_2 .list_icon .list_icon_item_link:hover svg path {
           fill: #2acfcf; }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 800px) {
   .col_3 {
     width: 100%; }
   .header {
@@ -404,3 +405,47 @@ p {
         margin: 0 0 4rem; }
       .footer .col_2 .list_icon {
         justify-content: center; } }
+
+@media screen and (max-width: 1200px) and (min-width: 980px) {
+  .button {
+    padding: 1.3rem; }
+  .header {
+    margin: 5rem 12rem; }
+  .intro {
+    margin-left: 12rem; }
+  .statistics {
+    padding: 0 12rem; }
+    .statistics .container_form {
+      left: 12rem;
+      right: 12rem; }
+  .footer {
+    padding: 7rem 12rem 6rem; }
+    .footer .row {
+      justify-content: start; }
+      .footer .row .col {
+        width: 20%; }
+      .footer .row .col_2 {
+        width: 80%; } }
+
+@media screen and (max-width: 980px) and (min-width: 800px) {
+  .button {
+    padding: 1.3rem; }
+  .header {
+    margin: 5rem 7rem; }
+  .intro {
+    margin-left: 7rem; }
+  .statistics {
+    padding: 0 7rem; }
+    .statistics .container_form {
+      left: 7rem;
+      right: 7rem; }
+  .footer {
+    padding: 7rem 7rem 6rem; }
+    .footer .row {
+      justify-content: start; }
+      .footer .row .col {
+        width: 20%; }
+      .footer .row .col_2 {
+        width: 80%; }
+        .footer .row .col_2 .list {
+          margin-right: 3.2rem; } }
