@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/CorbicBojana/JS9#readme",
   "dependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.3.0",
     "concurrently": "^5.2.0",
     "http-server": "^0.12.3",
     "open-cli": "^6.0.1"
